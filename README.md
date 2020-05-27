@@ -1,2 +1,21 @@
 # Nels-n-ATV
-I disassembled an 35 old USSR wired controlled  (moon walker) toy and made possible for it to be controlled from phone through  Wi-fi module. The top of the toy is removed so it basically looks like a tank (because it has tracks) but without a turret. 
+
+I disassembled an 35 old USSR wired controlled  (moon walker) toy and made possible for it to be controlled from phone through  Wi-fi module (ESP 8266). The top of the toy is removed so it basically looks like a tank (because it has tracks) but without a turret. 
+
+Разглобих 35 годишна съветска с дистанционно управление играчка "Луноход" и направих възможно тя да може да се контролира от телефон през Wi-fi модул (ESP 8266). Горната част на играчката е махната затова тя изглежда като танк (защото има гумени вериги) , но без купол.
+
+Как можете и Вие да направите същият проект?
+
+Ще се нуждаете от:
+- Arduino Uno - 1 брой
+- Wi-fi module ESP 8266 - 1 брой
+- L9110 motor controller - 1 брой 
+- Малък (или средно голям) акумулатор на 12 V (?) - 1 брой
+- Играчка с шаси на танк, която използва вериги за предвиждване !(този проект няма да работи качествено ако играчката е голяма количка или нещо различно от играчка с вериги)! - 1 брой
+- Breadboard за ардуиното - 1 брой
+- Кабелчета мъжко-мъжко и мъжко-женско - >>ПО<< 10 броя (препоръчвам Ви малко повече от колкото Ви трябват)
+- USB кабел за връзка с ардуиното - 1 брой 
+- Кодът който съм качил в репозирито с име ""
+- Да сте си изтеглили Arduino IDE 
+ 
+ Разяснения по проекта -
