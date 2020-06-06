@@ -1,0 +1,99 @@
+<!DOCTYPE html >
+<html>
+<head>
+<title>WiFi controlled LED</title>
+<script src="jquery.js"></script>
+
+</head>
+<body>
+<h2> <i> WiFi Controlled LED using Arduino and ESP8266 </i> </h2>
+<h4> <i> Enter the IP address of ESP8266 </i> </h4>
+<div style="margin: 0; width:400px; height:30px;">
+<FORM NAME="form" ACTION="" METHOD="GET">
+ESP8266 IP Address:
+<INPUT TYPE="text" NAME="inputbox" VALUE="" />
+</FORM>
+</div>
+<h3> Click to toggle LED! </h3>
+<input type="button" NAME="Motor_L_forward" value="L forward" />
+<input type="button" NAME="Motor_R_forward" value="R forward" />
+<input type="button" NAME="Motor_L_stop" value="L stop" />
+<input type="button" NAME="Motor_R_stop" value="R stop" />
+<input type="button" NAME="Motor_L_backward" value="L backward" />
+<input type="button" NAME="Motor_R_backward" value="R backward" />
+
+<p>STATUS: LED is OFF!</p>
+</body>
+<script>
+$.ajaxSetup({timeout:1000});
+btn_MLF = document.querySelector('input[name="Motor_L_backward"]');
+btn_MRF = document.querySelector('input[name="Motor_R_backward"]');
+btn_MLS = document.querySelector('input[name="Motor_L_stop"]');
+btn_MRS = document.querySelector('input[name="Motor_R_stop"]');
+btn_MLB = document.querySelector('input[name="Motor_L_forward"]');
+btn_MRB = document.querySelector('input[name="Motor_R_forward"]');
+
+txt = document.querySelector('p');
+btn_MLF.addEventListener('click', MLF);
+btn_MRF.addEventListener('click', MRF);
+btn_MLS.addEventListener('click', MLS);
+btn_MRS.addEventListener('click', MRS);
+btn_MLB.addEventListener('click', MLB);
+btn_MRB.addEventListener('click', MRB);
+
+function MLF()
+{
+	var val1 = 'MLF';
+	TextVar = form.inputbox.value;
+	ArduinoVar = "http://" + TextVar + ":80/";
+	$.get( ArduinoVar, {led: val1})	;
+	{Connection: close};
+}
+
+function MRF()
+{
+	var val1 = 'MRF';
+	TextVar = form.inputbox.value;
+	ArduinoVar = "http://" + TextVar + ":80/";
+	$.get( ArduinoVar, {led: val1})	;
+	{Connection: close};
+}
+
+function MLS()
+{
+	var val1 = 'MLS';
+	TextVar = form.inputbox.value;
+	ArduinoVar = "http://" + TextVar + ":80/";
+	$.get( ArduinoVar, {led: val1})	;
+	{Connection: close};
+}
+
+function MRS()
+{
+	var val1 = 'MRS';
+	TextVar = form.inputbox.value;
+	ArduinoVar = "http://" + TextVar + ":80/";
+	$.get( ArduinoVar, {led: val1})	;
+	{Connection: close};
+}
+
+function MLB()
+{
+	var val1 = 'MLB';
+	TextVar = form.inputbox.value;
+	ArduinoVar = "http://" + TextVar + ":80/";
+	$.get( ArduinoVar, {led: val1})	;
+	{Connection: close};
+}
+
+function MRB()
+{
+	var val1 = 'MRB';
+	TextVar = form.inputbox.value;
+	ArduinoVar = "http://" + TextVar + ":80/";
+	$.get( ArduinoVar, {led: val1})	;
+	{Connection: close};
+}
+
+</script>
+</html>
