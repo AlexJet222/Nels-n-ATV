@@ -65,7 +65,7 @@ void setup()
     esp8266Serial("AT+RST\r\n", 5000, DEBUG); // Reset the ESP8266
     Serial.println ("Starting....");
     esp8266Serial("AT+CWMODE=1\r\n", 5000, DEBUG); //Set station mode Operation   s
-   esp8266Serial("AT+CWJAP_DEF=\"Tuborg 68\",\"bababa27\"\r\n", 5000, DEBUG);//Enter your WiFi network's SSID and Password.
+   esp8266Serial("AT+CWJAP_DEF=\"Tuborg 68\",\"12345\"\r\n", 5000, DEBUG);//Enter your WiFi network's SSID and Password.
                                 
     /*while(!esp8266.find("OK")) 
     {
